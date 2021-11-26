@@ -1,0 +1,715 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+
+
+	<!-- ***** Welcome Area Start ***** -->
+	
+		<!-- ***** Header Text Start ***** -->
+		<div class="header-text">
+			{% if messages %}
+			{% for msg in messages %}
+			<div class="alert alert-primary mt-2" role="alert">
+				{{msg}}
+			  </div>
+			{% endfor %}
+			{% endif %}
+			<div class="welcome-area" id="welcome">
+			
+			<div class="container-fluid">
+			
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 align-self-left navbarh1" style="margin-top: 50px;" >
+						<h1 class="navbarh11" style="font-size: 23px;color: rgb(146, 140, 140); text-secondary;line-height: 55px;background-color: floralwhite;">{% blocktranslate  %}O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi {% endblocktranslate  %}<br> <hr> <b  style="font-size: 23px;color: rgb(146, 140, 140);">{% blocktranslate  %}Samarqand viloyati Bandlik bosh boshqarmasi{% endblocktranslate  %}</b> </h1>
+					<hr>	
+					</div>
+					<div class="offset-lg-1 col-lg-7 col-md-7 col-sm-12 align-self-center">
+						<div class="home-img-group">
+							<!-- <div class="home-img img-1">
+								<img src="assets1/images/photos/home/02 федера.jpg" alt="">
+							</div> -->
+							<div class="home-img img-2">
+								<img src="{% static 'assets1/images/photos/home/20c.jpg' %}" alt="">
+							</div>
+						
+							<div class="home-img img-4">
+								<img src="{% static 'assets1/images/photos/home/scale_1200.jpg' %}" alt="">
+								<div class="content">
+									<div class="text">
+										<strong style="font-size: 22px;">{% blocktranslate  %}O‘zbekiston Respublikasi Bandlik va mehnat munosabatlari vazirligi{% endblocktranslate  %}</strong>
+										<p style="font-size: 22px;">{% blocktranslate  %}“Yangi o'zbekistonda erkin va farovon yashaylik”{% endblocktranslate  %}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Header Text End ***** -->
+	</div>
+	<!-- ***** Welcome Area End ***** -->
+
+
+	<!-- ***** Davlat xizmatlari Start ***** -->
+	<section class="section padding-top-0">
+		<div class="container">
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% trans 'Davlat xizmatlari' %}</p>
+			<div class="row">
+				
+				<div class="col-lg-12">
+					<div class="row">
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12 "   data-scroll-reveal="enter bottom move 70px over 0.6s after 0.2s">
+							<a href="http://ish.mehnat.uz/" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-search"></i>
+								</div>
+								<h5 class="features-title pb-4">{% blocktranslate %}O'zbekistonda ish topish{% endblocktranslate %}</h5>
+							<!-- <p>Morbilling pharetra sapiening ut mattis viverra. Curabitur magna.</p> -->
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+							<a href="https://my.mehnat.uz/login" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-briefcase"></i>
+								</div>
+								<h5 class="features-title  pb-4">{% trans 'Ishga joylashganim tarixi' %}</h5>
+								
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+							<a href="https://dmi.mehnat.uz/" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-edit"></i>
+								</div>
+								<h5 class="features-title" style="padding-bottom: 5px;">{% trans 'Davlat mehnat inspeksiyasiga murojaat qilish' %}</h5>
+								
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+
+						<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
+							<a href="https://my.mehnat.uz/login" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-list-alt"></i>
+								</div>
+								<h5 class="features-title">{% trans 'Yuridik shaxslar uchun Mehnat shartnomasini onlayn rasmiylashtirish' %}</h5>
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+							<!-- ***** Features Small Item Start ***** -->
+							<div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
+								<a href="http://ish.mehnat.uz/" class="features-small-item">
+									<div class="icon">
+										<i class="fa fa-user"></i>
+									</div>
+									<h5 class="features-title " style="padding-bottom: 24px;">{% trans 'Yuridik shaxslar uchun Ishchi topish' %}</h5>
+								</a>
+							</div>
+							<!-- ***** Features Small Item End ***** -->
+								<!-- ***** Features Small Item Start ***** -->
+						<div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
+							<a href="https://reestr.mehnat.uz/" class="features-small-item">
+								<div class="icon">
+									<i class="fa fa-folder-open"></i>
+								</div>
+								<h5 class="features-title">{% trans 'Yuridik shaxslar uchun XBAni xususiy bandlik agentliklari reestriga kiritish' %}</h5>
+							</a>
+						</div>
+						<!-- ***** Features Small Item End ***** -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Davlat xizmatlari End ***** -->
+
+	<!-- ***** Davlat mehnat inspeksiyasi statistikasi Start ***** -->
+
+	<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% trans 'Davlat mehnat inspeksiyasi statistikasi' %}</p>
+	<section class="parallax-counter" id="counter">
+		<div class="parallax-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>13426</strong>
+							<span>{% trans 'Jami' %}
+								<br>{% trans 'murojaatlar' %}</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>8575</strong>
+							<span>{% trans 'Tekshirish' %}
+								<br>{% trans 'va o\'rganishlar' %}</span>
+						</div>
+					</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>7508</strong>
+							<span>{% trans 'Qanoatlantirilgan' %}
+								<br>{% trans 'murojaatlar' %}</span>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<div class="count-item">
+							<strong>7444</strong>
+							<span>{% trans 'Solingan' %}<br>{% trans 'jarimalar' %}</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Davlat mehnat inspeksiyasi statistikasi End ***** -->
+
+	<!-- ***** Yangiliklar qismi boshlandi -->
+	<section class="section padding-bottom colored testimonial-2 gray-bg">
+		<div class="container">
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">Yangiliklar</p>
+			<div class="row align-items-center">
+				<div class="col-lg-12 testimonial-wrap-2">
+				
+					{% for new in news %}
+					<div class="news-card">
+						<a href="{% url 'news_d' new.pk %}" class="news-card__card-link"></a>
+						<img src="{{ new.image.url }}" alt="{{ new.title }}" style="height: 25rem;" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">{{ new.title }}</h2>
+						  <div class="news-card__post-date">{{ new.date }}</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">{{ new.Text|truncatewords:40 }}</p>
+							<a href="{% url 'news_d' new.pk %}" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					{% endfor %}
+					
+				</div>
+
+				
+			</div>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">o o</p>
+		</div>
+	</section>
+	<!-- ***** Yangiliklar qismi boshlandi -->
+	
+	<!-- ***** Davlat organlari saytlari Start ***** -->
+	<section class="section padding-bottom colored" id="features">
+		<div class="container">
+			<p class="text-center font-weight-bold p-3" style="font-size:30px;">{% trans 'Davlat organlari saytlari' %}</p>
+
+			<div class="row">
+		
+					<!-- ***** Page Content Start ***** -->
+					<div class="page-bottom">
+						<div class="container margin-bottom-10">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="https://https//mehnat.uz/oz">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/mehnat.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi{% endblocktranslate %}</h5>
+										
+										</div>
+									</a>
+								</div> 
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="https://president.uz/oz">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/1554356554-vw5JOfarnhb0CSIuLPwA.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston respublikasi prezidentining rasmiy veb-sayti{% endblocktranslate %}</h5>
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="http://lex.uz/uz/">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/1554356596-JrBclGLvUNTXpw6qu6Zi.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}Yagona interaktiv davlat xizmatlari portali{% endblocktranslate %}</h5>
+											
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="https://data.gov.uz/oz">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/1554356696-rJQVDYoP0ZPRynaRV0mk.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi ochiq ma'lumotlar portali{% endblocktranslate %}</h5>
+											
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="https://www.gov.uz/oz">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/1554356634-Ad8lmd7jGMfHZiqAXTzR.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}O`zbekiston Respublikasi Hukumat portali{% endblocktranslate %}</h5>
+										
+										</div>
+									</a>
+								</div>
+								<div class="col-lg-6 col-md-12 col-sm-12">
+									<a class="services" href="https://my.gov.uz/oz">
+										<div class="icon">
+											<img src="{% static 'assets1/images/photos/icons/yagona.png' %}" alt="">
+										</div>
+										<div class="text">
+											<h5 class="services-title">{% blocktranslate %}Yagona interaktiv davlat xizmatlari portali{% endblocktranslate %}</h5>
+										
+										</div>
+									</a>
+								</div>
+								
+							
+							</div>
+						</div>			
+					</div>
+					<!-- ***** Page Content End ***** -->
+			
+				
+			
+				
+			
+			</div>
+		</div>
+	</section>
+	<!-- *****  Davlat organlari saytlari End ***** -->
+
+	<!-- **** Elonlar qismi start -->
+	<section class="section padding-bottom colored testimonial-2 gray-bg">
+		<div class="container">
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">E'lonlar</p>
+			<div class="row align-items-center">
+				<div class="col-lg-12 testimonial-wrap-2">
+				
+	
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					<div class="news-card">
+						<a href="#" class="news-card__card-link"></a>
+						<img src="{% static 'assets1/news.jpg' %}" alt="" class="news-card__image">
+						<div class="news-card__text-wrapper">
+						  <h2 class="news-card__title">Mehnat uz yangiliklar</h2>
+						  <div class="news-card__post-date">Noyabr 23, 2021</div>
+						  <div class="news-card__details-wrapper">
+							<p class="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+							<a href="#" class="news-card__read-more">Ko'proq <i class="fas fa-long-arrow-alt-right"></i></a>
+						  </div>
+						</div>
+					</div>
+					
+				</div>
+
+				
+			</div>
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">o o</p>
+		</div>
+	</section>
+	<!-- **** Elonlar qismi end -->
+
+	<!-- ***** Ko'p beriladigan savollar Start ***** -->
+	<section class="section padding-bottom-80 colored" id="faq" id="features">
+		<div class="container">
+			<p class="text-center font-weight-bold p-2" style="font-size:30px;">{% blocktranslate %}Ko'p beriladigan savollar{% endblocktranslate %}</p>
+			
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+					<div class="accordion" id="accordionExample">
+						<div class="card m-3 ">
+						  <div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="fa fa-question-circle fa-2x pr-2 "></i>{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazish – bu nima?{% endblocktranslate %}
+							  </button>
+							</h2>
+						  </div>
+					  
+						  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="card-body">
+								{% blocktranslate %}Ish joylarni attestasiyadan o`tkazish – ishlab chiqarish muhitidagi fizikaviy, kimyoviy, biologik omillarni, ish joyida mehnat jarayonidagi og`irlik va zo`riqishni sinov asboblarida kompleks o`rganish, uskunalarning jarohat yetkazish xavfini aniqlash jarayonidir.{% endblocktranslate %}
+							</div>
+						  </div>
+						</div>
+						<div class="card m-3">
+						  <div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<i class="fa fa-question-circle fa-2x pr-2"></i>{% blocktranslate %}Ish joylarning attestasiyadan o`tkazish qayerda o`tkaziladi?{% endblocktranslate %}
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="card-body">
+								{% blocktranslate %}O‘zbekiston Respublikasi Adliya vazirligida 28 may 1996 yilda 247-raqam bilan ro‘yxatga olingan “Mehnat sharoitlarini baxolash, mehnat sharoitlari bo‘yicha ish joylarini attestasiyadan o‘tkazish uslubiyoti”ga muvofiq attestasiyadan o‘tkazish ishlari tashkiliy-huquqiy shakli, mulkchilik shakli va idoraviy bo‘ysunishidan qat'i nazar korxona va tashkilotlarda amalga oshiriladi.{% endblocktranslate %}
+							</div>
+						  </div>
+						</div>
+						<div class="card m-3">
+						  <div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+							  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<i class="fa fa-question-circle fa-2x pr-2"></i>{% blocktranslate %}Nima uchun ish joylarni attestasiyadan o‘tkazish zarur?{% endblocktranslate %}
+							  </button>
+							</h2>
+						  </div>
+						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body">
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
+
+								Ish joyi sharoitining zararliligi va mehnatning xavfliligi darajasini va qanday sinfga ta'aluqliligini asoslash;
+								
+								Ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish;
+								
+								O‘zbekiston Respublikasi Vazirlar Mahkamasining 1994 yil 12 maydagi 250-son qarori bilan tasdiqlangan O‘zbekiston Respublikasi «Fuqarolarni davlat pensiya ta'minoti haqida»gi qonuniga asosan imtiyozli davlat pensiya ta'minoti huquqini beruvchi 1, 2 va 3-son ro‘yxatlariga ishlab chiqarish, muassasa, ish, kasb, lavozim va ko‘rsatkichlarini taaluqliligini asoslash;
+								
+								Korxonada noqulay va alohida tusdagi mehnat sharoitida ishlagani uchun yillik qo‘shimcha ta'til kunlari va qiskartirilgan ish vaqti davomiyligi huquqini beruvchi ish, kasb va lavozimlar ro‘yxatlarini aniqlash;
+								
+								Xodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash (belgilash);
+								
+								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.{% endblocktranslate %}
+							</div>
+						  </div>
+						  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="card-body">
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishning asosiy maqsadi, fuqarolarni sanitariya-gigiena me'yorlariga javob beruvchi sog‘lom va xavfsiz mehnat sharoitlariga bo‘lgan konstitusiyaviy huquqlarini ro‘yobga chiqarish;
+
+								Ish joyi sharoitining zararliligi va mehnatning xavfliligi darajasini va qanday sinfga ta'aluqliligini asoslash;
+								
+								Ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish;
+								
+								O‘zbekiston Respublikasi Vazirlar Mahkamasining 1994 yil 12 maydagi 250-son qarori bilan tasdiqlangan O‘zbekiston Respublikasi «Fuqarolarni davlat pensiya ta'minoti haqida»gi qonuniga asosan imtiyozli davlat pensiya ta'minoti huquqini beruvchi 1, 2 va 3-son ro‘yxatlariga ishlab chiqarish, muassasa, ish, kasb, lavozim va ko‘rsatkichlarini taaluqliligini asoslash;
+								
+								Korxonada noqulay va alohida tusdagi mehnat sharoitida ishlagani uchun yillik qo‘shimcha ta'til kunlari va qiskartirilgan ish vaqti davomiyligi huquqini beruvchi ish, kasb va lavozimlar ro‘yxatlarini aniqlash;
+								
+								Xodimni noqulay mehnat sharoitida ishlagani uchun imtiyozli davlat pensiya ta'minotiga huquqi mavjudligi yoki yo‘kligini tasdiqlash (belgilash);
+								
+								ishlab chiqarishda jarohatlanish va kasb kasalliklariga chalinishni oldini olish, mehnat sharoitlarini sog‘lomlashtirish tadbirlarini ishlab chiqish uchun zarur.{% endblocktranslate %}
+							</div>
+						  </div>
+						  
+						</div>
+							<div class="card m-3">
+							<div class="card-header" id="headingThree">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+									<i class="fa fa-question-circle fa-2x pr-2"></i>	{% blocktranslate %}Ish joylarni attestasiyadan o‘tkazishga kim mas'ul?{% endblocktranslate %}
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							  <div class="card-body">
+								{% blocktranslate %}Ish joylarni attestasiyadan o‘z vaqtida va sifatli o‘tkazish uchun korxona raxbari (ish beruvchi) mas'ul.{% endblocktranslate %}</div>
+							</div>
+						
+							
+						  </div>	<div class="card m-3">
+							<div class="card-header" id="headingThree">
+							  <h2 class="mb-0">
+								<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5e">
+									<i class="fa fa-question-circle fa-2x pr-2"></i>	{% blocktranslate %}Ish joylarning attestasiyadan o‘tkazish qaysi davrda amalga oshirilishi lozim?{% endblocktranslate %}
+								</button>
+							  </h2>
+							</div>
+							<div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							  <div class="card-body">
+								{% blocktranslate %}Attestasiyadan o‘tkazish davriyligi korxona tomonidan belgilanadi, lekin 5 yilda bir martadan kam bo‘lmasligi kerak.{% endblocktranslate %}
+							  </div>
+							</div>
+						
+							
+						  </div>
+					  </div>
+			</div>
+		</div>
+	</section>
+	<!-- ***** Features Big Item End ***** -->
+
+
+	<!-- ***** Features Big Item Start ***** -->
+	<!-- <section class="section padding-bottom-80">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+					<img src="assets1/images/photos/features/blue-2.png" class="img-fluid d-block mx-auto" alt="App">
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+					<div class="left-heading">
+						<h2 class="section-title">Design & Development</h2>
+					</div>
+					<div class="left-text">
+						<p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu augue, molestie faucibus metus ullamcorper vel.</p>
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home active" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Web Design</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Mobile App Design</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Android Development</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>iOS Development</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Back-End</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Front-End</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>e-Commerce</span>
+								</a>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<a class="btn-home" href="#">
+									<i class="fa fa-angle-right"></i>
+									<span>Print Design</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- ***** Features Big Item End ***** -->
+
+
+	<section id="contact" class="page">
+
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="contact">
+							
+							<div class="contact-info">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="item">
+											<i class="fa fa-location-arrow"></i>
+											<div class="txt">
+												<span>455 West Orchard Street<br>Kings Mountain, NC 28086</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="item">
+											<i class="fa fa-phone"></i>
+											<div class="txt">
+												<span>(272) 211-7370<br>(524) 386-5730</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12">
+										<div class="item">
+											<i class="fa fa-envelope"></i>
+											<div class="txt">
+												<span><a href="mailto:info@yourbrand.com">info@yourbrand.com</a></span>
+											</div>
+										</div>
+										<div class="item">
+											<i class="fa fa-envelope"></i>
+											<div class="txt">
+												<span><a href="mailto:support@yourbrand.com">support@yourbrand.com</a></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="social">
+									<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-square"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="contact-bottom">
+							<div class="row">
+								<!-- ***** Contact Text Start ***** -->
+								<div class="col-lg-4 col-md-6 col-sm-12">
+							
+									<div class="contact-text">
+										<h4>
+											{% blocktranslate %}O`zbekiston Respublikasi bandlik va mehnat munosabatlari vazirligi{% endblocktranslate %}
+										</h4>
+										<h4 style="font-weight: bolder;">{% blocktranslate %}Samarqand viloyati Bandlik bosh boshqarmasi{% endblocktranslate %}</4>
+									</div>
+								</div>
+								<!-- ***** Contact Text End ***** -->
+
+								<!-- ***** Contact Form Start ***** -->
+							
+								<div class="col-lg-8 col-md-6 col-sm-12">
+									<form class="contact-form" action="{% url 'action_view'%}" method="POST">
+										<input type="hidden" , name="action" , value="create_ad">
+										{% csrf_token %}
+									<div class="contact-form">
+										<div class="row">
+											<div class="col-lg-6 col-md-12 col-sm-12">
+												<input type="text" name="name"  placeholder="{% trans 'F.I.O' %}" required="required">
+											</div>
+											<div class="col-lg-6 col-md-12 col-sm-12">
+												<input type="text"  name="email" placeholder="{% trans 'E-Mail' %}" required="required">
+											</div>
+											<div class="col-lg-6 col-md-12 col-sm-12">
+												<input type="text" name="phone" placeholder="{% trans 'Telefon' %}" required="required">
+											</div>
+											<div class="col-lg-6 col-md-12 col-sm-12">
+												<input type="text" name="message" placeholder="{% trans 'Mavzu' %}" required="required">
+											</div>
+											<div class="col-lg-12">
+												<textarea  name="message_long" placeholder="{% trans 'Matn...' %}" required="required"></textarea>
+											</div>
+											<div class="col-lg-12">
+												<button class="btn-primary-line" type="submit"> {% trans 'Yuborish' %}</button>
+											</div>
+										</div>
+									</div>
+								</form>
+
+								</div>
+								<!-- ***** Contact Form End ***** -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+
+	</section>
+
+
+	<div class="dropdown">
+		<input type="checkbox" id="menu">
+		<label for="menu"><i title="Maxsus imkoniyatlar" class="fas fa-glasses fa-2x"></i></label>
+		   <div id="font_size_vftvi">
+			 <span class="ico p margin-r-10"><i title="Shriftni kattalashtirish" class="fas fa-search-plus fa-2x"></i></span>
+			 <span class="ico r margin-r-10"><i title="Shriftni dastlabki holati" class="fas fa-search fa-2x"></i></span>
+			 <span class="ico m margin-r-10"><i title="Shriftni kichiklashtirish" class="fas fa-search-minus fa-2x"></i></span>
+		   </div>
+ 
+						   <a id="toogle_site_reader" class="i_switcher voice_inic margin-r-10">
+							   <i class="fas fa-volume-up turn_on fa-2x" title="Ovozni yoqish" arria-hidden="false"></i>
+							   <i class="fas fa-volume-mute turn_off fa-2x" title="Ovozni o'chirish" arria-hidden="true"></i>
+						   </a>
+						   
+						   <a id="toogle_site_view" class="i_switcher voice_inic margin-r-10">
+							   <i class="far fa-eye turn_on fa-2x" title="Zaif ko'ruvchilar uchun" arria-hidden="false"></i>
+							   <i class="far fa-eye-slash turn_off fa-2x" title="Standart holat" arria-hidden="true"></i>
+						   </a>
+ 
+						   <a id="toogle_site_view_contrast" class="i_switcher voice_inic margin-r-10">
+							   <i class="fas fa-eye turn_on fa-2x" title="Zaif ko'ruvchilar uchun" arria-hidden="false"></i>
+							   <i class="fas fa-eye-slash turn_off fa-2x" title="Standart holat" arria-hidden="true"></i>
+						   </a>
+		 </div>   
+{% endblock content %} 
