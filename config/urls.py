@@ -28,6 +28,7 @@ urlpatterns += i18n_patterns(
     # path('pages/', include('django.contrib.flatpages.urls')),
     # path('contact/', include("contact.urls")),
     path("", include("management.urls")),
+    prefix_default_language=False
    ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
               + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

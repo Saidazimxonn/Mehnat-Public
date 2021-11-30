@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'active_link',
     #Create APP
     'frontend',
     'management',
+
     
     
 ]
@@ -130,11 +132,11 @@ USE_TZ = True
 gettext = lambda s: s
 LANGUAGES = (
     ('uz',  gettext('Uzbek')),
-    ('ko',  gettext('Korean')),
     ('ru',  gettext('Russian')),
     ('en',  gettext('English')),
     
 )
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'uz'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
